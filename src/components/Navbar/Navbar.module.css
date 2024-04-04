@@ -1,0 +1,4 @@
+.navbar{
+    grid-area: sidebar;
+    background-color: bisque;
+}

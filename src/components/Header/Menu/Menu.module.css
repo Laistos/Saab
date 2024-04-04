@@ -1,0 +1,31 @@
+.menu{
+    display: flex;
+}
+.link_container{
+    margin-right: 5px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    align-items: center;
+}
+.link{
+    position: relative;
+    color: #000000;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+}
+.link:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+.link:hover:after,
+.link:focus:after{
+    width: 100%;
+}
