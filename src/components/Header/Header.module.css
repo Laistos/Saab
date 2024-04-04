@@ -2,6 +2,7 @@
     grid-area: header;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -13,33 +14,3 @@
 }
 
 
-.language{
-    display: flex;
-    margin: 0 20px 0 20px;
-}
-
-.image{
-    width: 30px;
-    height: 30px;
-}
-
-.info{
-    margin: 0 0 0 30px;
-}
-.text {
-}
-
-.profile{
-    margin: 0 10px 0 60px;
-    display: flex;
-    /*align-items: center;*/
-}
-.profile_icon{
-    width: 25px;
-    height: 25px;
-}
-.profile_link{
-    text-decoration: none;
-    color: #000000;
-    margin-left: 15px;
-}
