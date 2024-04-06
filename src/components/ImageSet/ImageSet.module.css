@@ -1,0 +1,30 @@
+.content{
+    grid-area: imageset;
+    padding-top: 50px;
+    /*padding-left: 50px;*/
+    width: 852px;
+}
+
+.image_set{
+    display: grid;
+    grid-template-areas:
+        "car1 car2"
+        "car3 car3";
+    /*grid-template-columns: 1fr;*/
+    /*grid-template-rows: 1fr;*/
+}
+.image1{
+    grid-area: car1;
+    width: 592px;
+    height: 366px;
+}
+.image2{
+    grid-area: car2;
+    width: 260px;
+    height: 366px;
+}
+.image3{
+    grid-area: car3;
+    width: 852px;
+    height: 650px;
+}

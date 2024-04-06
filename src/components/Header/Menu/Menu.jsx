@@ -4,6 +4,7 @@ import MenuLink from "./MenuLink/MenuLink";
 const Menu = () => {
 
     let menu = [
+        {link: "Модельный ряд "},
         {link: "Мир Saab"},
         {link: "Кузовный ремонт"},
         {link: "Спецаильные предложения"},

@@ -1,4 +1,44 @@
+.wrapper{
+    padding: 150px 0 0 150px;
+    grid-area: navbar;
+    /*width: 366px;*/
+}
+
 .navbar{
-    grid-area: sidebar;
-    background-color: bisque;
+}
+
+.line{
+    background-color: #061FFF;
+    width: 72px;
+    height: 2px;
+    margin-bottom: 60px;
+}
+
+.link_container{
+    margin-bottom: 40px;
+}
+
+.link{
+    position: relative;
+    color: #000000;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+.link:hover:after,
+.link:focus:after{
+    width: 100%;
 }

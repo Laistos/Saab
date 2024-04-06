@@ -3,10 +3,19 @@
     display: grid;
     grid-template-areas:
     "header header"
-    "sidebar content"
+    "content content"
     "footer footer";
     grid-template-rows: 1fr;
     grid-template-columns:2fr 3fr ;
+    max-width: 1300px;
+    margin: 0px auto;
 }
 
 
+.content{
+    grid-area: content;
+    display: grid;
+    grid-template-areas:"navbar imageset";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr;
+}
