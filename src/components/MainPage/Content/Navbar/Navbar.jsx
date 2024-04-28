@@ -1,4 +1,5 @@
 import styles from './Navbar.module.css'
+import {NavLink} from "react-router-dom";
 
 const Navbar = (props) => {
     return (
@@ -6,19 +7,19 @@ const Navbar = (props) => {
             <div className={styles.line}></div>
             <nav className={styles.navbar}>
                 <div className={styles.link_container}>
-                    <a href="#" className={styles.link}>Узнать о 9-5 Sedan</a>
+                    <NavLink className={styles.link} to={'/knew'}>Узнать о 9-5 Sedan</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <a href="#" className={styles.link}>Модельный ряд</a>
+                    <NavLink className={styles.link} to={'/models'}>Модельный ряд</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <a href="#" className={styles.link}>Специальные предложения</a>
+                    <NavLink className={styles.link} to={'/offers'}>Специальные предложения</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <a href="#" className={styles.link}>Записаться на сервис</a>
+                    <NavLink className={styles.link} to={'/subscribe'}>Записаться на сервис</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <a href="#" className={styles.link}>Записаться на тест-драйв</a>
+                    <NavLink className={styles.link} to={'/test'}>Записаться на тест-драйв</NavLink>
                 </div>
             </nav>
         </div>

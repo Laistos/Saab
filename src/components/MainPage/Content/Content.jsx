@@ -1,10 +1,10 @@
 import styles from './Content.module.css'
-import Navbar from "../Navbar/Navbar";
-import ImageSet from "../ImageSet/ImageSet";
+import Navbar from "./Navbar/Navbar";
+import ImageSet from "./ImageSet/ImageSet";
 
 const Content = () => {
     return(
-        <div className={styles.wrapper}>
+        <div className={styles.content}>
             <Navbar />
             <ImageSet />
         </div>

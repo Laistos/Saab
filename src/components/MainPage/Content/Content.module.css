@@ -1,0 +1,6 @@
+.content{
+    display: grid;
+    grid-template-areas:"navbar imageset";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr;
+}

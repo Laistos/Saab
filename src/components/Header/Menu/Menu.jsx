@@ -1,22 +1,27 @@
 import styles from './Menu.module.css'
-import MenuLink from "./MenuLink/MenuLink";
+import {NavLink} from "react-router-dom";
 
 const Menu = () => {
-
-    let menu = [
-        {link: "Модельный ряд "},
-        {link: "Мир Saab"},
-        {link: "Кузовный ремонт"},
-        {link: "Спецаильные предложения"},
-        {link: "Сервис и аксессуары"},
-        {link: "Ещё"},
-    ]
-
-    let menuElement = menu.map((menu) => {return <MenuLink link={menu.link} />})
-
     return (
         <nav className={styles.menu}>
-            {menuElement}
+            <div className={styles.link_container}>
+                <NavLink to={'/main'} className={styles.link}>Главная</NavLink>
+            </div>
+            <div className={styles.link_container}>
+                <NavLink to={'/about'} className={styles.link}>Мир Saab</NavLink>
+            </div>
+            <div className={styles.link_container}>
+                <NavLink to={'/models'} className={styles.link}>Модельный ряд</NavLink>
+            </div>
+            <div className={styles.link_container}>
+                <NavLink to={'/repair'} className={styles.link}>Кузовный ремонт</NavLink>
+            </div>
+            <div className={styles.link_container}>
+                <NavLink to={'/offers'} className={styles.link}>Спецаильные предложения</NavLink>
+            </div>
+            <div className={styles.link_container}>
+                <NavLink to={'/service'} className={styles.link}>Сервис и аксессуары</NavLink>
+            </div>
         </nav>
     )
 }

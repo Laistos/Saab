@@ -1,7 +1,7 @@
 import styles from './ImageSet.module.css'
-import car_1 from '../../images/cars/car_1.jpg'
-import car_2 from '../../images/cars/car_2.jpg'
-import car_3 from '../../images/cars/car_3.jpg'
+import car_1 from '../../../../images/cars/car_1.jpg'
+import car_2 from '../../../../images/cars/car_2.jpg'
+import car_3 from '../../../../images/cars/car_3.jpg'
 
 const ImageSet = () => {
     return (

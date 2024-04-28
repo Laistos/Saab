@@ -1,40 +1,21 @@
 import styles from './Footer.module.css'
-import logo from '../../images/logo.jpg'
+import instagram from '../../images/icons/instagram.svg'
+import facebook from '../../images/icons/facebook.svg'
 
 const Footer = () => {
-    return (
-        <footer className={styles.wrapper}>
-            <div className={styles.line}></div>
-            <div className={styles.logo_container}>
-                <img src={logo} className={styles.logo} alt="logo"/>
+    return(
+        <footer className={styles.flex_container}>
+            <div>Copyright © Saab</div>
+            <div className={styles.social_networks}>
+                <a className={styles.social_link} target={"_blank"} href="https://www.instagram.com" rel="noreferrer">
+                    <img src={instagram} alt=""/>
+                </a>
+                <a target={"_blank"} href="https://www.facebook.com/?locale=ru_RU">
+                    <img className={styles.social_link} src={facebook} alt=""/>
+                </a>
             </div>
-            <div className={styles.menu_wrapper}>
-                <div className={styles.models}>
-                    <h1 className={styles.title}>Модели</h1>
-                    <div className={styles.list}>
-                        <a href="#" className={styles.model}>Saab 9-5</a>
-                        <a href="#" className={styles.model}>Saab 9-3</a>
-                        <a href="#" className={styles.model}>Saab 9-2x</a>
-                        <a href="#" className={styles.model}>Saab 9-7x</a>
-                        <a href="#" className={styles.model}>Saab 9-4x</a>
-                    </div>
-                </div>
-                <div className={styles.item_container}>
-                    <h2 className={styles.title}>Поддержка</h2>
-                    <div className={styles.item}>
-                        <a href="#" className={styles.link}>Автомобили с пробегом</a>
-                        <a href="#" className={styles.link}>Страхование</a>
-                        <a href="#" className={styles.link}>Контакты</a>
-                    </div>
-                </div>
-                <div className={styles.itemContainer}>
-                    <h2 className={styles.title}>Мир Saab</h2>
-                    <div className={styles.item}>
-                        <a href="#" className={styles.link}>О нас</a>
-                        <a href="#" className={styles.link}>Экологическая политика</a>
-                        <a href="#" className={styles.link}>Вакансии</a>
-                    </div>
-                </div>
+            <div className={styles.link_container}>
+                <a className={styles.link} href="">Юридическая информация </a>
             </div>
         </footer>
     )

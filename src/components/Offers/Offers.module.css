@@ -1,0 +1,34 @@
+.wrapper{
+    margin-top: 70px;
+}
+.item{
+    display: grid;
+    grid-template-areas: "model container";
+    &:not(:last-child){
+        margin-bottom: 40px;
+    }
+    border: #000000 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+.model{
+    grid-area: model;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+.container{
+    grid-area: container;
+}
+
+.text{
+    width: 500px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+
+.image{
+    width: 500px;
+    height: 300px;
+}
