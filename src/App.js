@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./components/MainPage/MainPage";
 import {Route, Routes} from "react-router-dom";
 import Offers from "./components/Offers/Offers";
+import ModelsContainer from "./components/Models/ModelsContainer";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Routes>
                     <Route path={'/main'} element={<MainPage />}/>
                     <Route path={'/offers'} element={<Offers />}/>
+                    <Route path={'/models'} element={<ModelsContainer />}/>
                 </Routes>
             </div>
             <Footer/>
