@@ -1,5 +1,6 @@
 import styles from './ContentMenu.module.css'
 import logo from '../../../images/logo.jpg'
+import {NavLink} from "react-router-dom";
 
 const ContentMenu = () => {
     return (
@@ -12,11 +13,11 @@ const ContentMenu = () => {
                 <div className={styles.models}>
                     <h1 className={styles.title}>Модели</h1>
                     <div className={styles.list}>
-                        <a href="#" className={styles.model}>Saab 9-5</a>
-                        <a href="#" className={styles.model}>Saab 9-3</a>
-                        <a href="#" className={styles.model}>Saab 9-2x</a>
-                        <a href="#" className={styles.model}>Saab 9-7x</a>
-                        <a href="#" className={styles.model}>Saab 9-4x</a>
+                        <NavLink to={'/models'} className={styles.model}>Saab 9-5</NavLink>
+                        <NavLink to={'/models'} className={styles.model}>Saab 9-3 </NavLink>
+                        <NavLink to={'/models'} className={styles.model}>Saab 9-2x</NavLink>
+                        <NavLink to={'/models'} className={styles.model}>Saab 9-7x</NavLink>
+                        <NavLink to={'/models'} className={styles.model}>Saab 9-4x</NavLink>
                     </div>
                 </div>
                 <div className={styles.item_container}>

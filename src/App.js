@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import Offers from "./components/Offers/Offers";
 import ModelsContainer from "./components/Models/ModelsContainer";
 import BodyRepair from "./components/BodyRepair/BodyRepair";
+import ServiceSignUp from "./components/ServiceSignUp/ServiceSignUp";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path={'/offers'} element={<Offers />}/>
                     <Route path={'/models'} element={<ModelsContainer />}/>
                     <Route path={'/repair'} element={<BodyRepair />}/>
+                    <Route path={'/subscribe'} element={<ServiceSignUp />}/>
                 </Routes>
             </div>
             <Footer/>
