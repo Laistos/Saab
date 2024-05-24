@@ -7,19 +7,19 @@ const Navbar = (props) => {
             <div className={styles.line}></div>
             <nav className={styles.navbar}>
                 <div className={styles.link_container}>
-                    <NavLink className={styles.link} to={'/knew'}>Узнать о 9-5 Sedan</NavLink>
+                    <NavLink target={"_blank"} className={styles.link} to={'/models'}>Узнать о 9-5 Sedan</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <NavLink className={styles.link} to={'/models'}>Модельный ряд</NavLink>
+                    <NavLink target={"_blank"} className={styles.link} to={'/models'}>Модельный ряд</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <NavLink className={styles.link} to={'/offers'}>Специальные предложения</NavLink>
+                    <NavLink target={"_blank"} className={styles.link} to={'/offers'}>Специальные предложения</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <NavLink className={styles.link} to={'/subscribe'}>Записаться на сервис</NavLink>
+                    <NavLink target={"_blank"} className={styles.link} to={'/subscribe'}>Записаться на сервис</NavLink>
                 </div>
                 <div className={styles.link_container}>
-                    <NavLink className={styles.link} to={'/test'}>Записаться на тест-драйв</NavLink>
+                    <NavLink target={"_blank"} className={styles.link} to={'/test'}>Записаться на тест-драйв</NavLink>
                 </div>
             </nav>
         </div>

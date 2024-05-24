@@ -4,7 +4,7 @@ import Saab_9_4x from '../../images/offers/Saab_9_4x.jpg'
 import Saab_9_5 from '../../images/offers/Saab_9_5.jpg'
 import discount1 from '../../images/offers/Discount_pana.svg'
 import discount2 from '../../images/offers/Discount_cuate.svg'
-import discount3 from '../../images/offers/Discount-amico.svg'
+import discount3 from '../../images/offers/Discount_amico.svg'
 
 const Offers = () => {
     return (

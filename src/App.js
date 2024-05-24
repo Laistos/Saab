@@ -7,6 +7,8 @@ import Offers from "./components/Offers/Offers";
 import ModelsContainer from "./components/Models/ModelsContainer";
 import BodyRepair from "./components/BodyRepair/BodyRepair";
 import ServiceSignUp from "./components/ServiceSignUp/ServiceSignUp";
+import TestSignUp from "./components/TestSignUp/TestSignUp";
+import Accessories from "./components/Accessories/Accessories";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                     <Route path={'/models'} element={<ModelsContainer />}/>
                     <Route path={'/repair'} element={<BodyRepair />}/>
                     <Route path={'/subscribe'} element={<ServiceSignUp />}/>
+                    <Route path={'/test'} element={<TestSignUp />}/>
+                    <Route path={'/service'} element={<Accessories />}/>
                 </Routes>
             </div>
             <Footer/>
