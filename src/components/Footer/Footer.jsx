@@ -1,6 +1,7 @@
 import styles from './Footer.module.css'
 import instagram from '../../images/icons/instagram.svg'
 import facebook from '../../images/icons/facebook.svg'
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -15,7 +16,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className={styles.link_container}>
-                <a className={styles.link} href="">Юридическая информация </a>
+                <NavLink className={styles.link} to={'/legal'}>Юридическая информация </NavLink>
             </div>
         </footer>
     )
