@@ -13,6 +13,8 @@ import BodyRepair from "./components/BodyRepair/BodyRepair";
 import {accessories} from "./state/accessories";
 import {legal_info} from "./state/legal_info";
 import {offers} from "./state/offers";
+import CarsForSale from "./components/CarsForSale/CarsForSale";
+import {cars_for_sale} from "./state/cars_for_sale";
 
 function App(props) {
     return (
@@ -28,6 +30,7 @@ function App(props) {
                     <Route path={'/test'} element={<TestSignUp />}/>
                     <Route path={'/service'} element={<Accessories accessories={props.accessories}/>}/>
                     <Route path={'/legal'} element={<LegalInfo legal_info={props.legal_info}/>}/>
+                    <Route path={'/cars_sale'} element={<CarsForSale cars_for_sale={props.cars_for_sale}/>}/>
                 </Routes>
             </div>
             <Footer/>

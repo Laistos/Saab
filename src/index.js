@@ -9,6 +9,7 @@ import {models_state} from "./state/models";
 import {accessories} from "./state/accessories";
 import {legal_info} from "./state/legal_info";
 import {offers} from "./state/offers";
+import {cars_for_sale} from "./state/cars_for_sale";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,8 @@ root.render(
                  models={models_state}
                  accessories={accessories}
                  legal_info={legal_info}
-                 offers={offers}/>
+                 offers={offers}
+                 cars_for_sale={cars_for_sale}/>
         </React.StrictMode>
     </BrowserRouter>
 );
