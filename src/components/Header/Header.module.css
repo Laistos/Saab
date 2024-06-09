@@ -1,16 +1,29 @@
-.header{
+.header {
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #2f2fa2;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled {
+    top: -110px;
+    transition: top 0.3s ease;
 }
 
 .logo {
-    width: 85px;
-    height: 70px;
-}
-.logo_container{
-    margin-right: 20px;
+    width: 95px;
+    height: 80px;
 }
 
-
+.logo_container {
+    padding-left: 30px;
+}

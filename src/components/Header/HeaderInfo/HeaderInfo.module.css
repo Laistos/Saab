@@ -9,10 +9,14 @@
     height: 30px;
 }
 
+.text{
+    color: #F5F5F5;
+}
+
 .profile{
     margin: 0 10px 0 60px;
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
 }
 .profile_icon{
     width: 25px;
@@ -20,7 +24,7 @@
 }
 .profile_link{
     text-decoration: none;
-    color: #000000;
+    color: #F5F5F5;
 }
 .link_container{
     margin-left: 15px;
@@ -36,7 +40,7 @@
     width: 0;
     bottom: -5px;
     height: 2px;
-    background-color: #000000;
+    background-color: #F5F5F5;
     content: "";
     transition: width 0.3s ease-out;
 }

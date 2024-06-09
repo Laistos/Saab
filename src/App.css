@@ -1,17 +1,14 @@
 .App{
-    padding: 15px;
     display: grid;
     grid-template-areas:
     "header header"
     "content content"
     "footer footer";
-    grid-template-rows: 1fr;
-    grid-template-columns:2fr 3fr ;
-    max-width: 1300px;
-    margin: 0 auto;
+    grid-template-rows: 80px 1fr 148px;
+    grid-template-columns:1fr 2fr;
 }
 
 .main_content{
     grid-area: content;
+    flex: 1 1 auto;
 }
-

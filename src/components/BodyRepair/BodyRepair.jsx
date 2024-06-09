@@ -11,10 +11,10 @@ const BodyRepair = (props) => {
         setCurrentSlide(currentSlide === props.body_repair.slides.length - 1 ? 0 : currentSlide + 1);
     };
     return (
-        <div className="slider">
-            <div className="slider-content">
+        <div className={styles.slider}>
+            <div className={styles.slider_container}>
                 <h2>{props.body_repair.slides[currentSlide].brand}</h2>
-                <div className="parts">
+                <div className={styles.parts}>
                     {props.body_repair.slides[currentSlide].parts.map((part, index) => (
                         <div className={styles.flex_container} key={index}>
                             <div className={styles.item}>

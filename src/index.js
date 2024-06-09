@@ -18,7 +18,8 @@ root.render(
                  models={models_state}
                  accessories={accessories}
                  legal_info={legal_info}
-                 offers={offers}/>
+                 offers={offers}
+            />
         </React.StrictMode>
     </BrowserRouter>
 );
