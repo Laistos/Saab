@@ -23,7 +23,7 @@ const ContentMenu = () => {
                 <div className={styles.item_container}>
                     <h2 className={styles.title}>Поддержка</h2>
                     <div className={styles.item}>
-                        <a href="#" className={styles.link}>Автомобили с пробегом</a>
+                        <NavLink to={'/cars_sale'} className={styles.link}>Автомобили с пробегом</NavLink>
                         <a href="#" className={styles.link}>Страхование</a>
                         <a href="#" className={styles.link}>Контакты</a>
                     </div>

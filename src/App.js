@@ -10,6 +10,7 @@ import TestSignUp from "./components/TestSignUp/TestSignUp";
 import Accessories from "./components/Accessories/Accessories";
 import LegalInfo from "./components/LegalInfo/LegalInfo";
 import BodyRepair from "./components/BodyRepair/BodyRepair";
+import CarsForSale from "./components/CarsForSale/CarsForSale";
 
 function App(props) {
     return (
@@ -25,6 +26,7 @@ function App(props) {
                     <Route path={'/test'} element={<TestSignUp/>}/>
                     <Route path={'/service'} element={<Accessories accessories={props.accessories}/>}/>
                     <Route path={'/legal'} element={<LegalInfo legal_info={props.legal_info}/>}/>
+                    <Route path={'/cars_sale'} element={<CarsForSale cars_for_sale={props.cars_for_sale}/>}/>
                 </Routes>
             </div>
             <Footer/>

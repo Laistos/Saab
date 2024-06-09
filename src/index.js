@@ -9,6 +9,7 @@ import {models_state} from "./state/models";
 import {accessories} from "./state/accessories";
 import {legal_info} from "./state/legal_info";
 import {offers} from "./state/offers";
+import {cars_for_sale} from "./state/cars_for_sale";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,12 +20,10 @@ root.render(
                  accessories={accessories}
                  legal_info={legal_info}
                  offers={offers}
-            />
+                 сars_for_sale={cars_for_sale}/>
         </React.StrictMode>
     </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
